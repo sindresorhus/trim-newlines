@@ -31,7 +31,6 @@
 		"start",
 		"end",
 		"string",
-		"str",
 		"remove",
 		"delete",
 		"strip"
