@@ -1,4 +1,4 @@
-# trim-newlines [![Build Status](https://travis-ci.org/sindresorhus/trim-newlines.svg?branch=master)](https://travis-ci.org/sindresorhus/trim-newlines)
+# trim-newlines
 
 > Trim [newlines](https://en.wikipedia.org/wiki/Newline) from the start and/or end of a string
 
