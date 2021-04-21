@@ -1,4 +1,6 @@
-'use strict';
-module.exports = string => string.replace(/^[\r\n]+|[\r\n]+$/g, '');
-module.exports.start = string => string.replace(/^[\r\n]+/, '');
-module.exports.end = string => string.replace(/[\r\n]+$/, '');
+export default function trimNewlines(string) {
+	return string.replace(/^[\r\n]+|[\r\n]+$/g, '');
+}
+
+trimNewlines.start = string => string.replace(/^[\r\n]+/, '');
+trimNewlines.end = string => string.replace(/[\r\n]+$/, '');

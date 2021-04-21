@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import trimNewlines = require('.');
+import trimNewlines from './index.js';
 
 expectType<string>(trimNewlines('\n🦄\r\n'));
 expectType<string>(trimNewlines.start('\n\n🦄\n'));

@@ -1,5 +1,5 @@
 import test from 'ava';
-import trimNewlines from '.';
+import trimNewlines from './index.js';
 
 test('main', t => {
 	t.is(trimNewlines('\nx\n'), 'x');
