@@ -6,7 +6,7 @@ export default function trimNewlines(string) {
 		start++;
 	}
 
-	while (end > 0 && (string[end - 1] === '\r' || string[end - 1] === '\n')) {
+	while (end > start && (string[end - 1] === '\r' || string[end - 1] === '\n')) {
 		end--;
 	}
 
