@@ -1,16 +1,5 @@
 export default function trimNewlines(string) {
-	let start = 0;
-	let end = string.length;
-
-	while (start < end && (string[start] === '\r' || string[start] === '\n')) {
-		start++;
-	}
-
-	while (end > start && (string[end - 1] === '\r' || string[end - 1] === '\n')) {
-		end--;
-	}
-
-	return (start > 0 || end < string.length) ? string.slice(start, end) : string;
+	return trimNewlines.start(trimNewlines.end(string));
 }
 
 trimNewlines.start = string => {
