@@ -6,6 +6,7 @@ test('main', t => {
 	t.is(trimNewlines('  '), '  ');
 	t.is(trimNewlines('\n\n\r'), '');
 	t.is(trimNewlines('\nx\n'), 'x');
+	t.is(trimNewlines('\nx\nx\n'), 'x\nx');
 	t.is(trimNewlines('\n\n\nx\n\n\n'), 'x');
 	t.is(trimNewlines('\r\nx\r\n'), 'x');
 	t.is(trimNewlines('\n\r\n\nx\n\r\n\n'), 'x');
