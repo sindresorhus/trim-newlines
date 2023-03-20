@@ -5,8 +5,8 @@ Trim from the start and end of a string.
 ```js
 import trimNewlines from 'trim-newlines';
 
-trimNewlines('\n🦄\r\n');
-//=> '🦄'
+trimNewlines('\n🦄\n🦄\r\n');
+//=> '🦄\n🦄'
 ```
 */
 export function trimNewlines(string: string): string;
