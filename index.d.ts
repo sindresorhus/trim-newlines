@@ -6,8 +6,8 @@ declare const trimNewlines: {
 	```js
 	import trimNewlines from 'trim-newlines';
 
-	trimNewlines('\n🦄\r\n');
-	//=> '🦄'
+	trimNewlines('\n🦄\n🦄\r\n');
+	//=> '🦄\n🦄'
 	```
 	*/
 	(string: string): string;

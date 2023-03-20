@@ -13,8 +13,8 @@ $ npm install trim-newlines
 ```js
 import trimNewlines from 'trim-newlines';
 
-trimNewlines('\n🦄\r\n');
-//=> '🦄'
+trimNewlines('\n🦄\n🦄\r\n');
+//=> '🦄\n🦄'
 
 trimNewlines.start('\n🦄\r\n');
 //=> '🦄\r\n'
