@@ -9,6 +9,8 @@ expectType<'🦄'>(trimNewlines('\n🦄\r\n'));
 expectType<'🦄\n'>(trimNewlinesStart('\n\n🦄\n'));
 expectType<'\n🦄'>(trimNewlinesEnd('\n🦄\n\n'));
 
+expectType<' 🦄\n '>(trimNewlines('\n 🦄\n \n'));
+
 declare const _string: string;
 
 expectType<string>(trimNewlines(_string));
