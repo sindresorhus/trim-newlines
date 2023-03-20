@@ -6,8 +6,8 @@ Looking to trim all whitespace, not just newlines? Use `String#trim()`, `String#
 
 ## Install
 
-```
-$ npm install trim-newlines
+```sh
+npm install trim-newlines
 ```
 
 ## Usage
@@ -38,15 +38,3 @@ Trim from the start of a string.
 ### trimNewlinesEnd(string)
 
 Trim from the end of a string.
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-trim-newlines?utm_source=npm-trim-newlines&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>

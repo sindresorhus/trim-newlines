@@ -16,7 +16,7 @@ Trim from the start and end of a string.
 
 @example
 ```js
-import trimNewlines from 'trim-newlines';
+import {trimNewlines} from 'trim-newlines';
 
 trimNewlines('\n🦄\n🦄\r\n');
 //=> '🦄\n🦄'
@@ -29,9 +29,9 @@ Trim from the start of a string.
 
 @example
 ```js
-import trimNewlines from 'trim-newlines';
+import {trimNewlinesStart} from 'trim-newlines';
 
-trimNewlines.start('\n🦄\r\n');
+trimNewlinesStart('\n🦄\r\n');
 //=> '🦄\r\n'
 ```
 */
@@ -42,9 +42,9 @@ Trim from the end of a string.
 
 @example
 ```js
-import trimNewlines from 'trim-newlines';
+import {trimNewlinesEnd} from 'trim-newlines';
 
-trimNewlines.end('\n🦄\r\n');
+trimNewlinesEnd('\n🦄\r\n');
 //=> '\n🦄'
 ```
 */
