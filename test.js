@@ -34,7 +34,7 @@ test('end', t => {
 });
 
 test('main - does not have exponential performance', t => {
-	for (let index = 0; index < 45000; index += 1000) {
+	for (let index = 0; index < 45_000; index += 1000) {
 		const string = 'a' + String(Array.from({length: index}).fill('\n').join('')) + String(Array.from({length: index}).fill('\n').join('')) + 'a';
 		const start = Date.now();
 		trimNewlines(string);
@@ -48,7 +48,7 @@ test('main - does not have exponential performance', t => {
 });
 
 test('start - does not have exponential performance', t => {
-	for (let index = 0; index < 45000; index += 1000) {
+	for (let index = 0; index < 45_000; index += 1000) {
 		const string = 'a' + String(Array.from({length: index}).fill('\n').join(''));
 		const start = Date.now();
 		trimNewlines.start(string);
@@ -62,7 +62,7 @@ test('start - does not have exponential performance', t => {
 });
 
 test('end - does not have exponential performance', t => {
-	for (let index = 0; index < 45000; index += 1000) {
+	for (let index = 0; index < 45_000; index += 1000) {
 		const string = String(Array.from({length: index}).fill('\n').join('')) + 'a';
 		const start = Date.now();
 		trimNewlines.end(string);
