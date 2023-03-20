@@ -1,4 +1,4 @@
-export default function trimNewlines(string) {
+export function trimNewlines(string) {
 	let start = 0;
 	let end = string.length;
 
@@ -13,7 +13,7 @@ export default function trimNewlines(string) {
 	return (start > 0 || end < string.length) ? string.slice(start, end) : string;
 }
 
-trimNewlines.start = string => {
+export function trimNewlinesStart(string) {
 	const end = string.length;
 	let start = 0;
 
@@ -22,9 +22,9 @@ trimNewlines.start = string => {
 	}
 
 	return start > 0 ? string.slice(start, end) : string;
-};
+}
 
-trimNewlines.end = string => {
+export function trimNewlinesEnd(string) {
 	let end = string.length;
 
 	while (end > 0 && (string[end - 1] === '\r' || string[end - 1] === '\n')) {
@@ -32,4 +32,4 @@ trimNewlines.end = string => {
 	}
 
 	return end < string.length ? string.slice(0, end) : string;
-};
+}
