@@ -11,15 +11,15 @@ $ npm install trim-newlines
 ## Usage
 
 ```js
-import trimNewlines from 'trim-newlines';
+import {trimNewlines, trimNewlinesStart, trimNewlinesEnd} from 'trim-newlines';
 
 trimNewlines('\n🦄\n🦄\r\n');
 //=> '🦄\n🦄'
 
-trimNewlines.start('\n🦄\r\n');
+trimNewlinesStart('\n🦄\r\n');
 //=> '🦄\r\n'
 
-trimNewlines.end('\n🦄\r\n');
+trimNewlinesEnd('\n🦄\r\n');
 //=> '\n🦄'
 ```
 
@@ -29,11 +29,11 @@ trimNewlines.end('\n🦄\r\n');
 
 Trim from the start and end of a string.
 
-### trimNewlines.start(string)
+### trimNewlinesStart(string)
 
 Trim from the start of a string.
 
-### trimNewlines.end(string)
+### trimNewlinesEnd(string)
 
 Trim from the end of a string.
 
